@@ -36,7 +36,7 @@ fi
 
 # Cài đặt các thư viện cần thiết
 echo "Cài đặt các thư viện cần thiết..."
-pip install python-dotenv pandas openpyxl psycopg2
+# pip install python-dotenv pandas openpyxl psycopg2
 
 # Tạo file .gitignore
 echo "Tạo file .gitignore..."
