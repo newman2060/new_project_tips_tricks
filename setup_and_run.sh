@@ -38,6 +38,11 @@ else
     source venv/bin/activate
 fi
 
+# cài đặt các thư viện từ đó vào môi trường ảo:
+echo "cài đặt các thư viện..."
+pip install -r requirements.txt
+
+
 # Tạo file .gitignore
 echo "Tạo file .gitignore..."
 cat << EOF > .gitignore
