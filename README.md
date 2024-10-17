@@ -9,3 +9,10 @@ code thực thi
 - tạo file .env
 - tạo và kích hoạt môi trường ảo
 - tạo file .gitignore
+
+
+cài đặt các thư viện cần thiết
+
+```
+pip install ten_thu_vien
+```
