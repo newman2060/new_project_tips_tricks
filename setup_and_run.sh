@@ -38,6 +38,7 @@ echo "Cài đặt các thư viện cần thiết..."
 echo "Tạo file .gitignore..."
 cat << EOF > .gitignore
 # Các file cấu hình và bí mật
+*.code-workspace
 *.env
 *.ini
 config.json
