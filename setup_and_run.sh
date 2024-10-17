@@ -28,11 +28,15 @@ python -m venv venv
 
 # Kích hoạt môi trường ảo
 echo "Kích hoạt môi trường ảo..."
-source venv/Scripts/activate
+if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "win32" ]]; then
+    source venv/Scripts/activate
+else
+    source venv/bin/activate
+fi
 
 # Cài đặt các thư viện cần thiết
 echo "Cài đặt các thư viện cần thiết..."
-# pip install python-dotenv pandas openpyxl psycopg2
+pip install python-dotenv pandas openpyxl psycopg2
 
 # Tạo file .gitignore
 echo "Tạo file .gitignore..."
