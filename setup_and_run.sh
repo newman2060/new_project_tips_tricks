@@ -14,11 +14,15 @@ echo "Tạo file .env..."
 cat << EOF > .env
 DB_HOST=your_host
 DB_PORT=your_port
-DB_PASSWORD=your_password
 DEFAULT_DB_NAME=postgres
 DEFAULT_DB_USER=your_default_user
+DB_PASSWORD=your_password
 
 VIRTUAL_ENV=./venv
+
+# hoặc ở thư mục cha
+# VIRTUAL_ENV=../venv
+
 EOF
 echo "File .env đã được tạo."
 
